@@ -1,3 +1,5 @@
+var CONFIG = require('./config.json');
+
 function textHasImageUrl(tweet) {
   return (tweet.text.indexOf(tweet.entities.media[0].url) > -1);
 }
