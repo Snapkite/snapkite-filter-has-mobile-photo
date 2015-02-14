@@ -7,7 +7,7 @@ Use together with [Snapkite Engine](https://github.com/fedosejev/snapkite-engine
 ## Install
 
 1. Copy `example.config.json` into `config.json`.
-2. Configure `config.json` as appropriate.
+2. Edit `config.json` as appropriate.
 
 ## License
 
