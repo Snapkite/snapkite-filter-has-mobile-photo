@@ -11,12 +11,12 @@ function isMobileMediaSize(tweet) {
 }
 
 function isValid(tweet) {
-  // This filter has no power
+  // This filter doesn't block anything
   if (CONFIG.content.with && CONFIG.content.without) {
     return true;
   }
 
-  // This filter blocks everything
+  // This filter blocks all tweets
   if (!CONFIG.content.with && !CONFIG.content.without) {
     return false;
   }
@@ -35,9 +35,9 @@ function isValid(tweet) {
       && isMobileMediaSize(tweet)
     ) {
       return true;
-    } else {
-      return false;
     }
+
+    return false;
   }
 
   // Show only without this content
@@ -54,9 +54,9 @@ function isValid(tweet) {
       && isMobileMediaSize(tweet)
     ) {
       return false;
-    } else {
-      return true;
     }
+
+    return true;
   }
 }
 

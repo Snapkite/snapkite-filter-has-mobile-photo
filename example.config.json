@@ -3,8 +3,8 @@
     "on": true
   },
   "content": {
-    "with": false,
-    "without": true,
+    "with": true,
+    "without": false,
     "validate": {}
   }
 }
